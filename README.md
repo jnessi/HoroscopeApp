@@ -21,18 +21,25 @@ The project is structured following **Clean Architecture + MVVM**, leverages **D
 
 ## 🏗 Architecture Overview
 
-The project follows a layered architecture with clear separation of responsibilities:
-data/
-├─ network/
-├─ providers/
-domain/
-├─ model/
-ui/
-├─ home/
-├─ horoscope/
-├─ detail/
-├─ luck/
-├─ palmistry/
+This project is built following Clean Architecture principles with a strong separation of concerns and testability in mind. The app is structured using the MVVM pattern, ensuring scalable, maintainable, and robust code.
+
+### 🔹 Core Architectural Concepts
+
+- **Clean Architecture**
+  - Separation between UI, Domain, and Data layers
+  - Each layer has a clear responsibility
+  - Easier testing and long-term maintainability
+
+- **MVVM Pattern**
+  - **View (Activities / Fragments)** → Displays UI and observes state
+  - **ViewModel** → Holds UI state, exposes data via `StateFlow / LiveData`
+  - **Model / Domain** → Business logic + app entities
+
+- **Navigation**
+  - Built using **Jetpack Navigation Component**
+  - Handles fragment transitions
+  - Single-Activity architecture
+  - Back stack managed automatically
 
 ---
 

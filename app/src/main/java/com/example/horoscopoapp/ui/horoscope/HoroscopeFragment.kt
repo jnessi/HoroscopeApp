@@ -43,6 +43,7 @@ class HoroscopeFragment : Fragment() {
 
     private fun initList() {
         horoscopeAdapter = HoroscopeAdapter(onItemSelected = {
+
             val type = when(it){
                 Aries -> HoroscopeModel.Aries
                 Aquarius -> HoroscopeModel.Aquarius
